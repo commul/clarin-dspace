@@ -113,7 +113,7 @@
 
    <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.title">Titel</message>
    <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dateissued">Datum der Publikation</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dateaccessioned">Datum der Archivierung/message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dateaccessioned">Datum der Archivierung</message>
 	<message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.relevance">Relevanz</message>
 	<message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by">Sortiere Objekte nach</message>
 	<message key="xmlui.ArtifactBrowser.AbstractSearch.order">sortiert</message>
@@ -219,7 +219,7 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.publisher.column_heading">Herausgeber</message>
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.language">Durchsuche nach Sprache</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.language">Durchsuche nach Sprache/message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.language">Durchsuche nach Sprache</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.language.column_heading">Sprache</message>
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.type">Durchsuche nach Typ</message>
