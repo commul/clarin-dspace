@@ -198,9 +198,9 @@
              dspace-xmlui/src/main/webapp/themes/mobile/readme.txt
         -->
     	<!-- UFAL Homepage -->
-    	<theme name="UFAL Homepage" regex="^$" path="UFALHome/" />
+    	<theme name="COMMUL Homepage" regex="^$" path="COMMULHome/" />
     	
     	<!-- UFAL theme -->
-        <theme name="UFAL Theme" regex=".*" path="UFAL/" />
+        <theme name="COMMUL Theme" regex=".*" path="COMMUL/" />
     </themes>
 </xmlui>
