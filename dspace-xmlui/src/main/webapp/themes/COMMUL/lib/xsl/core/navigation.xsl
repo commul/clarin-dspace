@@ -40,13 +40,13 @@
 					<li class="always-open hidden-xs">
 						<div style="background-color: #FFFFFF;" class="clearfix">
 							<div class="col-sm-7" style="height: 120px; position: relative;">
-								<a href="/lindat">
-									<img alt="LINDAT/CLARIN logo" class="img-responsive" style="position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; padding: 20px;" src="{$context-path}/themes/UFAL/images/lindat/lindat-logo.png" />
+								<a href="/">
+									<img alt="ERCC logo" class="img-responsive" style="position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; padding: 20px;" src="{$context-path}/themes/COMMUL/images/lindat/ercc-logo.png" />
 								</a>
 							</div>
 							<div class="col-sm-5 text-center" style="height: 120px; position: relative;">
 								<a href="http://www.clarin.eu/">
-									<img alt="CLARIN logo" class="img-responsive" style="position: absolute; bottom: 0px; left: 0px; right: 0px; padding: 10px;" src="{$context-path}/themes/UFAL/images/lindat/clarin-logo.png" />
+									<img alt="CLARIN logo" class="img-responsive" style="position: absolute; bottom: 0px; left: 0px; right: 0px; padding: 10px;" src="{$context-path}/themes/COMMUL/images/lindat/clarin-logo.png" />
 								</a>
 							</div>
 						</div>					
@@ -328,12 +328,12 @@
                 <ul class="submenu" style="padding-bottom: 8px;">
                         <li>
                         <a href="{$context-path}/page/deposit" style="border-top: none; padding: 7px 0px 8px 18px">
-                                <img src="{$context-path}/themes/UFALHome/lib/images/deposit.png" align="left" class="deposit" />
+                                <img src="{$context-path}/themes/COMMULHome/lib/images/deposit.png" align="left" class="deposit" />
                         </a>
                         </li>
                         <li>
                                 <a href="{$context-path}/page/cite" style="border-top: none; padding: 7px 0px 8px 18px;">
-                                <img src="{$context-path}/themes/UFALHome/lib/images/cite.png" align="right" class="cite" />
+                                <img src="{$context-path}/themes/COMMULHome/lib/images/cite.png" align="right" class="cite" />
                                 </a>
                         </li>
                 </ul>
@@ -429,7 +429,7 @@
                         </xsl:attribute>
 			<img>
 			    <xsl:attribute name="src">
-				<xsl:value-of select="concat($context-path,'/themes/UFAL/lib/lindat/public/img/flags/',$locale,'.png')"/>
+				<xsl:value-of select="concat($context-path,'/themes/COMMUL/lib/lindat/public/img/flags/',$locale,'.png')"/>
 			    </xsl:attribute>
 			    <xsl:attribute name="alt">
 	                        <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='supportedLocale'][@qualifier=$locale]"/>
