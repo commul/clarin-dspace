@@ -611,7 +611,7 @@
     <!-- org.dspace.app.xmlui.eperson.WelcomeLogin.java -->
     <message key="xmlui.EPerson.WelcomeLogin.title">Welcome message</message>
     <message key="xmlui.EPerson.WelcomeLogin.trail">Welcome message</message>
-    <message key="xmlui.EPerson.WelcomeLogin.head1">Welcome to ERCC Repository</message>
+    <message key="xmlui.EPerson.WelcomeLogin.head1">Welcome to the ERCC Repository</message>
     <message key="xmlui.EPerson.WelcomeLogin.head2">Privacy Statement</message>
     <message key="xmlui.EPerson.WelcomeLogin.para1">The information released by your IdP (home organisation) is shown below.</message>
     <message key="xmlui.EPerson.WelcomeLogin.warn1"><div class="bold text-error">We use only the required attributes as stated in <a href="https://lindat.eurac.edu/repository/xmlui/page/privacypolicy" target="_blank" class="bold">https://lindat.eurac.edu/repository/xmlui/page/privacypolicy</a>.<BR />However, we may log the attributes and keep them for a time period.</div></message>
@@ -3041,11 +3041,11 @@
 	<message key="input_forms.field.dc.description.required">Please give us a description</message>
 	<message key="input_forms.field.dc.language.iso.label">Language</message>
 	<message key="input_forms.field.dc.language.iso.hint">Select the language of the main content of the item. Multiple languages are possible. Start
-		typing the language and use autocomplete form that will appear if applicable. Better to list all the languages then to use the 'mul' iso code (if there are too many, contact support).
+		typing the language and use the autocomplete form that will appear if applicable. Better to list all the languages then to use the 'mul' iso code (if there are too many, contact support).
 	</message>
 	<message key="input_forms.field.dc.language.iso.required">Please choose a language for the resource.</message>
 	<message key="input_forms.field.dc.language.iso1.label">Language</message>
-	<message key="input_forms.field.dc.language.iso1.hint">If the tool/service is language dependent, select the appropriate language(s). Otherwise leave the field empty. Multiple languages are possible. Start typing the language and use autocomplete
+	<message key="input_forms.field.dc.language.iso1.hint">If the tool/service is language dependent, select the appropriate language(s). Otherwise leave the field empty. Multiple languages are possible. Start typing the language and use the autocomplete
 		form that will appear.
 	</message>
 	<message key="input_forms.field.dc.subject.label">Subject Keywords</message>
