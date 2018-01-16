@@ -614,7 +614,7 @@
     <message key="xmlui.EPerson.WelcomeLogin.head1">Welcome to the ERCC Repository</message>
     <message key="xmlui.EPerson.WelcomeLogin.head2">Privacy Statement</message>
     <message key="xmlui.EPerson.WelcomeLogin.para1">The information released by your IdP (home organisation) is shown below.</message>
-    <message key="xmlui.EPerson.WelcomeLogin.warn1"><div class="bold text-error">We use only the required attributes as stated in <a href="https://lindat.eurac.edu/repository/xmlui/page/privacypolicy" target="_blank" class="bold">https://lindat.eurac.edu/repository/xmlui/page/privacypolicy</a>.<BR />However, we may log the attributes and keep them for a time period.</div></message>
+    <message key="xmlui.EPerson.WelcomeLogin.warn1"><div class="bold text-error">We use only the required attributes as stated in <a href="https://clarin.eurac.edu/repository/xmlui/page/privacypolicy" target="_blank" class="bold">https://clarin.eurac.edu/repository/xmlui/page/privacypolicy</a>.<BR />However, we may log the attributes and keep them for a time period.</div></message>
     <message key="xmlui.EPerson.WelcomeLogin.buttonok">Return to Home</message>
 
 	<!-- org.dspace.app.xmlui.eperson.LDAPLogin.java -->
