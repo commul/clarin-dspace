@@ -844,7 +844,7 @@
 	</xsl:template>
 	
 	<xsl:template name="top-banner">
-	<div class="row hidden-xs">
+		<!--	<div class="row hidden-xs">
 		<div style="height: 160px;" class="carousel col-xs-12 col-sm-12 col-md-7 col-lg-8" id="layerslider">
 			<ol class="carousel-indicators">
 				<li class="active" data-slide-to="0" data-target="#layerslider" />
@@ -897,7 +897,7 @@
 		                </div>
 			</div>
         </div>		
-	</div>	
+</div>	-->
 	</xsl:template>
 </xsl:stylesheet>
 
