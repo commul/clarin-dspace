@@ -284,7 +284,7 @@
 				<xsl:call-template name="top-banner" />
 				
 				<!-- A line with lindat branding colors -->
-				<div class="row hidden-xs" style="background: url('{$theme-path}/images/lindat_color_line.png'); height: 3px;">&#160;</div>
+				<!--<div class="row hidden-xs" style="background: url('{$theme-path}/images/lindat_color_line.png'); height: 3px;">&#160;</div>-->
 
 		       	<div class="visible-xs text-center" style="margin-top: 5px; ">
 					<button id="showhidemenu" type="button" class="btn btn-default btn-sm" style="border-radius: 30px; width: 100%;">
@@ -621,7 +621,7 @@
                         </xsl:attribute>
                 <div class="row">
 					<div class="input-group input-group-lg col-md-6 col-md-offset-3">
-						<span class="input-group-addon"><i class="fa fa-search fa-lg" style="color: #7479B8;">&#160;</i></span>
+						<span class="input-group-addon"><i class="fa fa-search fa-lg" style="color: #d04c29;">&#160;</i></span>
 						<input class="form-control" type="text">
 							<xsl:attribute name="name">
 								<xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='queryField']" />
