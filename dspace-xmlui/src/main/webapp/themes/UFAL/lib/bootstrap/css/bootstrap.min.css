@@ -334,6 +334,21 @@ a:focus {
   text-decoration: underline;
 }
 
+div.artifact-title a {
+  color: #d04c29;
+  text-decoration: none;
+}
+
+div.artifact-title a:hover {
+  color: #d04c29;
+  text-decoration: underline;
+}
+
+div.artifact-title a:focus {
+  color: #d04c29;
+  text-decoration: underline;
+}
+
 a:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
