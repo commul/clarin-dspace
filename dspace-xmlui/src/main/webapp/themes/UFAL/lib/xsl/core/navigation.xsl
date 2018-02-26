@@ -333,7 +333,7 @@
                         </li>
                         <li>
                                 <a href="{$context-path}/page/cite" style="border-top: none; padding: 7px 0px 8px 18px;">
-                                <img src="{$context-path}/themes/UFALHome/lib/images/cite.png" align="right" class="cite" />
+                                <img src="{$context-path}/themes/UFALHome/lib/images/cite_blue.png" align="right" class="cite" />
                                 </a>
                         </li>
                 </ul>
