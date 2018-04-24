@@ -141,7 +141,7 @@
     <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.hasfile">Contain Files</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_branding">Community</message>
     <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.branding">Community</message>
-            
+
 
    <!--  some common other possibilities for Advanced Search Fields -->
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_contributor">Contributor</message>
@@ -215,7 +215,7 @@
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.type">Browsing by Type</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.type">Browsing by Type</message>
         <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.type.column_heading">Type</message>
-        
+
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.mediatype">Browsing by Medium Type</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.mediatype">Browsing by Medium Type</message>
         <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.mediatype.column_heading">Medium Type</message>
@@ -346,7 +346,7 @@
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.para_community">You do not have the credentials to access the restricted community <b>{0}</b>.</message>
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.para_collection">You do not have the credentials to access the restricted collection <b>{0}</b>.</message>
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.para_item">You do not have the credentials to access the restricted item <b>{0}</b>.</message>
-    
+
     <message key="xmlui.ArtifactBrowser.RestrictedItem.head_item_replaced">This item is replaced by a newer version</message>
     <message key="xmlui.ArtifactBrowser.RestrictedItem.para_item_replacedby">The requested item <b>{0}</b> is replaced by a new version which should be used instead. If you require this particular version, request it through our <a class="helpdesk-tolink">Help Desk</a>.</message>
 
@@ -361,7 +361,7 @@
     <message key="xmlui.administrative.item.ConfirmItemForm.withdraw_label_extra_handle">The new PID:</message>
     <message key="xmlui.administrative.item.ConfirmItemForm.withdraw_help_extra_reason">The reason why the item was withdrawn will be added to the dc.description.provenance</message>
     <message key="xmlui.administrative.item.ConfirmItemForm.withdraw_label_extra_reason">Reason:</message>
-    
+
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.para_bitstream">You do not have the credentials to access the restricted bitstream <b>{0}</b>.</message>
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.type_collection">collection</message>
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.type_community">community</message>
@@ -375,7 +375,7 @@
         <message key="xmlui.ArtifactBrowser.RestrictedItem.para_item_withdrawn">The selected item is withdrawn and is no longer available.</message>
         <message key="xmlui.ArtifactBrowser.RestrictedItem.para_item_restricted_auth">The selected item is access restricted and requires credentials to view. Please login to access the item.</message>
         <message key="xmlui.ArtifactBrowser.RestrictedItem.para_item_restricted">Your user account does not have the credentials to view this item. Please contact the <a class="helpdesk-tolink">Help Desk</a> if you have any questions.</message>
-        
+
 	<!-- Authentication messages used at the top of the login page:  -->
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.auth_header">The item is restricted</message>
 	<message key="xmlui.ArtifactBrowser.RestrictedItem.auth_message">The item you are attempting to access is a restricted item and requires credentials to view. Please login below to access the item.</message>
@@ -452,7 +452,7 @@
 	<message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.subject">Subject</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.mail">Send</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.back">Back</message>
-	
+
 	 <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestChangeStatusForm.java -->
 	<message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.title">Change permissions request</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.trail">Change permissions request</message>
@@ -463,7 +463,7 @@
     <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.name.error">The name is required</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.email.error">The e-mail address is required</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.changeToOpen">Change to open access</message>
-	        
+
 	<!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestResponseFalseForm.java -->
 	<message key="xmlui.ArtifactBrowser.ItemRequestStatusChanged.title">Request sent</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestStatusChanged.trail">Request sent</message>
@@ -500,7 +500,7 @@
     <message key="xmlui.ArtifactBrowser.ItemRequestResponseSent.para1">Your response has been sent.</message>
 
 
-	
+
 	<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 		                EPerson Aspect
@@ -532,7 +532,7 @@
 	<message key="xmlui.EPerson.EditProfile.first_name">First Name</message>
 	<message key="xmlui.EPerson.EditProfile.last_name">Last Name</message>
     <message key="xmlui.EPerson.EditProfile.last_login">Last Login</message>
-    
+
     <message key="xmlui.EPerson.EditProfile.auto_filled_in">This field is automatically filled in from authenticated session attributes.</message>
     <message key="xmlui.EPerson.EditProfile.usermetadata.head">User Metadata.</message>
 
@@ -614,7 +614,7 @@
     <message key="xmlui.EPerson.WelcomeLogin.head1">Welcome to the ERCC Repository</message>
     <message key="xmlui.EPerson.WelcomeLogin.head2">Privacy Statement</message>
     <message key="xmlui.EPerson.WelcomeLogin.para1">The information released by your IdP (home organisation) is shown below.</message>
-    <message key="xmlui.EPerson.WelcomeLogin.warn1"><div class="bold text-error">We use only the required attributes as stated in <a href="https://clarin.eurac.edu/repository/xmlui/page/privacypolicy" target="_blank" class="bold">https://clarin.eurac.edu/repository/xmlui/page/privacypolicy</a>.<BR />However, we may log the attributes and keep them for a time period.</div></message>
+    <message key="xmlui.EPerson.WelcomeLogin.warn1"><div class="bold text-error">We use only the required attributes as stated in <a href="https://clarin.eurac.edu/repository/xmlui/page/registration-privacypolicy" target="_blank" class="bold">https://clarin.eurac.edu/repository/xmlui/page/privacypolicy</a>.<BR />However, we may log the attributes and keep them for a time period.</div></message>
     <message key="xmlui.EPerson.WelcomeLogin.buttonok">Return to Home</message>
 
 	<!-- org.dspace.app.xmlui.eperson.LDAPLogin.java -->
@@ -695,7 +695,7 @@
 	<message key="xmlui.EPerson.StartRegistration.reset_password_for">Reset password for</message>
 	<message key="xmlui.EPerson.StartRegistration.submit_reset">Reset password</message>
 	<message key="xmlui.EPerson.StartRegistration.head2">New user registration</message>
-    <message key="xmlui.EPerson.StartRegistration.para2">Register an account to subscribe to collections for email updates, and submit new items to the repository.</message>
+    <message key="xmlui.EPerson.StartRegistration.para2">Register an account to subscribe to collections for email updates, and submit new items to the repository. By clicking on "Register" you acknowledge that you have read the <a href="page/privacypolicy">privacy policy</a> and agree with it.</message>
 	<message key="xmlui.EPerson.StartRegistration.email_address">Email Address</message>
 	<message key="xmlui.EPerson.StartRegistration.email_address_help">This address will be verified and used as your login name.</message>
 	<message key="xmlui.EPerson.StartRegistration.error_bad_email">Unable to send email to this address.</message>
@@ -741,7 +741,7 @@
 	<message key="xmlui.Submission.general.default.title">Submission</message>
 	<message key="xmlui.Submission.general.default.trail">Submission</message>
 	<message key="xmlui.Submission.general.submission.save_share">Save &amp; Share</message>
-	
+
 	<message key="xmlui.Submission.general.submission.handle">A handle {0} is reserved for your submission, you can use this handle for citation purposes. Please note that the handle will only become active after successful completion and approval of your submission.</message>
 
 	<!-- org.dspace.app.xmlui.submission.CollectionViewer -->
@@ -839,13 +839,13 @@
 	<message key="xmlui.Submission.submit.SelectCollection.collection_default">Select a collection...</message>
     <message key="xmlui.Submission.submit.SelectCollection.default_message">Please try to fill in all necessary details. The more metadata you can provide us, the better we can keep record of your submission.</message>
     <!--  <UFAL> -->
-    <!-- cz.cuni.mff.ufal.dspace.app.xmlui.aspect.submission.submit.SelectCollection -->    
+    <!-- cz.cuni.mff.ufal.dspace.app.xmlui.aspect.submission.submit.SelectCollection -->
     <message key="xmlui.Submission.submit.SelectCollection.select_collection_head">Select a collection</message>
     <message key="xmlui.Submission.submit.SelectCollection.select_collection_help">Please select appropriate collection according to the nature of the submitted data</message>
     <message key="xmlui.Submission.submit.SelectCollection.select_community_head">Select a community</message>
-    <message key="xmlui.Submission.submit.SelectCollection.select_community_help">Please choose the community that fits you the best.</message>    
+    <message key="xmlui.Submission.submit.SelectCollection.select_community_help">Please choose the community that fits you the best.</message>
     <message key="xmlui.Submission.submit.SelectCollection.single_collection_help">You are authorized to submit items to only a single collection, please click on Next to continue.</message>
-    <message key="xmlui.Submission.submit.SelectCollection.community">Community</message>    
+    <message key="xmlui.Submission.submit.SelectCollection.community">Community</message>
     <!-- </UFAL> -->
 
 	<!-- org.dspace.app.xmlui.Submission.submit.SaveOrRemoveStep -->
@@ -902,12 +902,12 @@
     <message key="xmlui.Submission.submit.ExtraMetadataStep.head">Additional Metadata for this Item</message>
     <message key="xmlui.Submission.submit.ExtraMetadataStep.deleteRepeatabaleComponent">Remove selected</message>
     <message key="xmlui.Submission.submit.ExtraMetadataStep.addNewRepeatabaleComponent">Add component</message>
-    
+
     <!-- cz.cuni.mff.ufal.HandleRemoved -->
     <message key="xmlui.ufal.HandleRemoved.title">This Handle was removed</message>
     <message key="xmlui.ufal.HandleRemoved.head">This Handle was removed</message>
     <message key="xmlui.ufal.HandleRemoved.trail_item">Item</message>
-    <message key="xmlui.ufal.HandleRemoved.trail_handle_removed">Handle Removed</message>      
+    <message key="xmlui.ufal.HandleRemoved.trail_handle_removed">Handle Removed</message>
     <message key="xmlui.ufal.HandleRemoved.message">This item no longer exists. If you think it should exist contact our <a class="helpdesk-tolink">Help Desk</a>.</message>
 
     <!-- org.dspace.app.xmlui.Submission.submit.UFALLicenseStep -->
@@ -932,16 +932,16 @@
     <message key="xmlui.Submission.submit.UFALLicenseStep.define.nourl">No url specified.</message>
     <message key="xmlui.Submission.submit.UFALLicenseStep.define.noname">No license name specified.</message>
     <message key="xmlui.Submission.submit.UFALLicenseStep.define.error">There was a problem while adding your license. Probably, you do not have appropriate access rights. Please, go back and/or contact the administrator.</message>
-    <message key="xmlui.Submission.submit.UFALLicenseStep.delete.error">There was a problem while deleting a license. Probably, you do not have appropriate access rights. Please, go back and/or contact the administrator.</message>        
+    <message key="xmlui.Submission.submit.UFALLicenseStep.delete.error">There was a problem while deleting a license. Probably, you do not have appropriate access rights. Please, go back and/or contact the administrator.</message>
     <message key="xmlui.Submission.submit.UFALLicenseStep.define.empty_label">Empty label</message>
     <message key="xmlui.Submission.submit.UFALLicenseStep.license_not_supported">The selected license is not supported at the moment. Please follow the procedure described under section "None of these licenses suits your needs".</message>
-    <message key="xmlui.Submission.submit.UFALLicenseStep.review_no_file">No file was uploaded in the upload step. There is no restriction on the metadata.</message>    
+    <message key="xmlui.Submission.submit.UFALLicenseStep.review_no_file">No file was uploaded in the upload step. There is no restriction on the metadata.</message>
     <message key="xmlui.Submission.submit.UFALLicenseStep.review_license_error">License specified by you was not found in the database. This is most likely due to an error please contact administrators.</message>
 	<message key="xmlui.Submission.submit.UFALLicenseStep.option_placeholder">Select a License ...</message>
 	<message key="xmlui.Submission.submit.UFALLicenseStep.select_head">Select the resource license</message>
 	<message key="xmlui.Submission.submit.UFALLicenseStep.or_label">- OR -</message>
 
-    
+
     <!-- cz.cuni.mff.ufal.UFALLicenceAgreement -->
     <message key="xmlui.ufal.UFALLicenceAgreement.title">Licence Agreement</message>
     <message key="xmlui.ufal.UFALLicenceAgreement.head">Licence Agreement</message>
@@ -1144,7 +1144,7 @@
     <message key="xmlui.Submission.submit.LicenseStep.license_list_alert">For the list of all supported licenses and their details visit </message>
     <message key="xmlui.Submission.submit.LicenseStep.license_list_alert_link">License List Page</message>
     <message key="xmlui.Submission.submit.LicenseStep.resource_license_text"><i class='fa fa-3x fa-crosshairs  pull-left'> </i>The License Selector will provide you visual assistance to select the most appropriate license for your data or software.</message>
-    <message key="xmlui.Submission.submit.LicenseStep.resource_license_text2">If you already know under which license you want to distribute your work, please select from the dropdown below.</message>    
+    <message key="xmlui.Submission.submit.LicenseStep.resource_license_text2">If you already know under which license you want to distribute your work, please select from the dropdown below.</message>
     <message key="xmlui.Submission.submit.LicenseStep.license_selector_button">OPEN License Selector</message>
 
 
@@ -3232,4 +3232,3 @@
 	<message key="xmlui.ContractPage.collection_name">{0}</message>
 
 </catalogue>
-
