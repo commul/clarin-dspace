@@ -10,12 +10,9 @@ ufal.handles = {
     		$('[name="submit"]').prop( "disabled", true );
     	}
     	$('[name="privacy"]').one('change', function (e) {
-        if($('[name="privacy"]:checked').length == 0) {
-    		$('[name="submit"]').prop( "disabled", true );
-      }
-      else {
-        	$('[name="submit"]').prop( "disabled", false );
-      }        
+
+    		$('[name="submit"]').prop( "disabled", !($('[name="privacy"]:checked')));
+
     	});
     }
 
