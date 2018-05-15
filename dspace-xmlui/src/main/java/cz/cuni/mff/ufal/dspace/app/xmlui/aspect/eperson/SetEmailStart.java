@@ -32,19 +32,19 @@ import org.dspace.app.xmlui.wing.element.Text;
 import org.xml.sax.SAXException;
 
 /**
- * Display the new user registration form, allowing the user to enter 
+ * Display the new user registration form, allowing the user to enter
  * in an email address and have the system verify the email address
  * before allowing the user create an account
- * 
+ *
  * There are two parameters that may be given to the form:
- * 
+ *
  * email - The email of the new account account
- * 
+ *
  * retry - A boolean value indicating that the previously entered email was invalid.
- * 
+ *
  * accountExists - A boolean value indicating the email previously entered allready
  *   belongs to a user.
- *   
+ *
  * based on class by Scott Phillips
  * modified for LINDAT/CLARIN
  */
@@ -54,62 +54,62 @@ public class SetEmailStart extends AbstractDSpaceTransformer implements Cacheabl
     /** language strings */
     private static final Message T_title =
         message("xmlui.EPerson.StartRegistration.title");
-    
+
     private static final Message T_dspace_home =
         message("xmlui.general.dspace_home");
-    
+
     private static final Message T_trail_new_registration =
         message("xmlui.EPerson.trail_new_registration");
-    
+
     private static final Message T_head1 =
         message("xmlui.EPerson.StartRegistration.head1");
-    
-    private static final Message T_para1 = 
+
+    private static final Message T_para1 =
         message("xmlui.EPerson.StartRegistration.para1");
-    
+
     private static final Message T_reset_password_for =
         message("xmlui.EPerson.StartRegistration.reset_password_for");
-    
-    private static final Message T_submit_reset = 
+
+    private static final Message T_submit_reset =
         message("xmlui.EPerson.StartRegistration.submit_reset");
-    
-    private static final Message T_head2 = 
+
+    private static final Message T_head2 =
         message("xmlui.EPerson.StartRegistration.head2");
-    
-    private static final Message T_para2 = 
+
+    private static final Message T_para2 =
         message("xmlui.EPerson.StartRegistration.para2");
-    
+
     private static final Message T_email_address =
         message("xmlui.EPerson.StartRegistration.email_address");
 
     private static final Message T_email_address_help =
         message("xmlui.EPerson.StartRegistration.email_address_help");
-    
+
     private static final Message T_error_bad_email =
         message("xmlui.EPerson.StartRegistration.error_bad_email");
-    
-    private static final Message T_submit_register = 
+
+    private static final Message T_submit_register =
         message("xmlui.EPerson.StartRegistration.submit_register");
-    
+
 
     /** The email address previously entered */
     private String email;
-    
+
     /** Determine if the user failed on their last attempt to enter an email address */
     private java.util.List<String> errors;
-    
-    /** 
-     * Determine if the last failed attempt was because an account allready 
-     * existed for the given email address 
+
+    /**
+     * Determine if the last failed attempt was because an account allready
+     * existed for the given email address
      */
     private boolean accountExists;
-    
+
     public void setup(SourceResolver resolver, Map objectModel, String src,
             Parameters parameters) throws ProcessingException, SAXException,
             IOException
-    { 
+    {
         super.setup(resolver,objectModel,src,parameters);
-        
+
         this.email = parameters.getParameter("email","");
         this.accountExists = parameters.getParameterAsBoolean("accountExists",false);
         String errors = parameters.getParameter("errors","");
@@ -122,8 +122,8 @@ public class SetEmailStart extends AbstractDSpaceTransformer implements Cacheabl
             this.errors = new ArrayList<String>();
         }
     }
-     
-    
+
+
     /**
      * Generate the unique caching key.
      * This key must be unique inside the space of this component.
@@ -159,39 +159,40 @@ public class SetEmailStart extends AbstractDSpaceTransformer implements Cacheabl
             return null;
         }
     }
-    
-    
-    public void addPageMeta(PageMeta pageMeta) throws WingException 
+
+
+    public void addPageMeta(PageMeta pageMeta) throws WingException
     {
         // Set the page title
         pageMeta.addMetadata("title").addContent(T_title);
 
         pageMeta.addTrailLink(contextPath + "/",T_dspace_home);
         pageMeta.addTrail().addContent(T_trail_new_registration);
+        pageMeta.addMetadata("include-library", "privacy");
     }
-    
+
    public void addBody(Body body) throws WingException {
-        
+
        if (accountExists) {
            Division exists = body.addDivision("register-account-exists","primary");
 
            exists.setHead(T_head1);
-           
+
            exists.addPara("That email address is already in use by another account.");
        }
-       
-       
+
+
        Division register = body.addInteractiveDivision("register",
                contextPath+"/set-email",Division.METHOD_POST,"primary");
-       
+
        register.setHead(T_head2);
-       
+
        EPersonUtils.registrationProgressList(register,1);
-       
+
        register.addPara(T_para2);
-       
+
        List form = register.addList("form",List.TYPE_FORM);
-       
+
        Text email = form.addItem().addText("email");
        email.setRequired();
        email.setLabel(T_email_address);
@@ -204,17 +205,19 @@ public class SetEmailStart extends AbstractDSpaceTransformer implements Cacheabl
        if (errors.contains("email_used")){
     	   email.addError("Sorry, this email is alredy in use.");
        }
-       
+       Item checkbox = form.addItem();
+       checkbox.addCheckBox("privacy").addOption("agreed", "I have read and agree with the privacy policy");
+
        Item submit = form.addItem();
        submit.addButton("submit").setValue(T_submit_register);
-       
-       register.addHidden("eperson-continue").setValue(knot.getId()); 
+
+       register.addHidden("eperson-continue").setValue(knot.getId());
    }
-   
+
    /**
     * Recycle
     */
-   public void recycle() 
+   public void recycle()
    {
        this.email = null;
        this.errors = null;

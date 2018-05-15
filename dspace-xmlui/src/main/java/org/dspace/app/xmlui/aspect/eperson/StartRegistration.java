@@ -213,10 +213,6 @@ public class StartRegistration extends AbstractDSpaceTransformer implements Cach
            email.addError(T_error_bad_email);
        }
        
-       Item checkbox = form.addItem();
-       checkbox.addCheckBox("privacy").addOption("agreed", "I have read and agree with the privacy policy");
-       
-       
        Item submit = form.addItem();
        submit.addButton("submit").setValue(T_submit_register);
        

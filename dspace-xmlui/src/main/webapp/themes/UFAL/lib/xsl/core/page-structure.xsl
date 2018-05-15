@@ -9,7 +9,7 @@
         administration
         ...
     footer
-    
+
     Author: Amir Kamran
 -->
 
@@ -39,7 +39,7 @@
         <html>
             <!-- First of all, build the HTML head element -->
             <xsl:call-template name="buildHead"/>
-            
+
             <!-- Then proceed to the body -->
 
             <!--paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/-->
@@ -51,14 +51,14 @@
 
             <!-- Common Header -->
             <xsl:call-template name="buildHeader" />
-            
+
             <xsl:apply-templates select="dri:body" />
 
             <!-- Common Footer -->
-            <xsl:call-template name="buildFooter" />            
+            <xsl:call-template name="buildFooter" />
 
             <!-- Javascript at the bottom for fast page loading -->
-            <xsl:call-template name="addJavascript" />                            
+            <xsl:call-template name="addJavascript" />
 
             <xsl:text disable-output-escaping="yes">&lt;/body&gt;</xsl:text>
         </html>
@@ -75,7 +75,7 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            
+
             <link rel="shortcut icon">
                 <xsl:attribute name="href">
                     <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]" />
@@ -84,7 +84,7 @@
                     <xsl:text>/images/favicon.ico</xsl:text>
                 </xsl:attribute>
             </link>
-            
+
             <!-- link rel="apple-touch-icon">
                 <xsl:attribute name="href">
                     <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]" />
@@ -103,9 +103,9 @@
                 </xsl:if>
               </xsl:attribute>
             </meta>
-            
+
             <!-- Add stylsheets -->
-                        
+
             <xsl:for-each select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='stylesheet']">
                 <link rel="stylesheet" type="text/css">
                     <xsl:attribute name="media">
@@ -123,7 +123,7 @@
 
             <!-- Add Lindat stylesheet -->
             <link rel="stylesheet" href="{$theme-path}/lib/lindat/public/css/lindat.css" media="screen" />
-            
+
             <!-- Bootstrap stylesheets -->
             <link rel="stylesheet" href="{$theme-path}/lib/bootstrap/css/bootstrap.min.css" media="screen" />
             <link rel="stylesheet" href="{$theme-path}/lib/bootstrap/css/font-awesome.min.css" media="screen" />
@@ -137,12 +137,12 @@
                 <link rel="stylesheet" href="{$theme-path}/lib/bootstrap/css/datepicker.css" />
             </xsl:if>
 
-	    
+
 	    <!-- license selector -->
         <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='include-library'][@qualifier='licenseselect']">
             <link rel="stylesheet" href="{$theme-path}/lib/lindat-license-selector/license-selector.css"> </link>
         </xsl:if>
-	    
+
 
 	    <!-- jquery-ui -->
             <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='include-library'][@qualifier='jquery-ui']">
@@ -153,23 +153,23 @@
             <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='include-library'][@qualifier='authority-control']">
                 <link rel="stylesheet" href="{$theme-path}/lib/css/authority-control.css"> </link>
             </xsl:if>
-            
-            
+
+
 			<xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='include-library'][@qualifier='jqplot']">
 				<link rel="stylesheet" href="{$theme-path}/lib/js/jqplot/jquery.jqplot.css"> </link>
 				<link rel="stylesheet" href="{$theme-path}/lib/css/jqplot.css"> </link>
 				<link rel="stylesheet" href="{$theme-path}/lib/css/daterangepicker.css"> </link>
-	        	</xsl:if>            
-            
+	        	</xsl:if>
+
             <!-- select2 -->
             <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='include-library'][@qualifier='select2']">
                 <link rel="stylesheet" href="{$theme-path}/lib/select2/select2.css" />
                 <link rel="stylesheet" href="{$theme-path}/lib/select2/select2-bootstrap.css" />
             </xsl:if>
-            
+
             <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='include-library'][@qualifier='bootstrap-toggle']">
                 <link rel="stylesheet" href="{$theme-path}/lib/bootstrap/css/bootstrap2-toggle.min.css" />
-            </xsl:if>            
+            </xsl:if>
 
             <!-- Add syndication feeds -->
             <xsl:for-each select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='feed']">
@@ -206,14 +206,14 @@
             <!-- The following javascript removes the default text of empty text areas when they are focused on or submitted -->
             <!-- There is also javascript to disable submitting a form when the 'enter' key is pressed. -->
             <script type="text/javascript">
-                
+
                 // Clear default text of emty text areas on focus
                 function tFocus(element) {
                     if (element.value == '<i18n:text>xmlui.dri2xhtml.default.textarea.value</i18n:text>'){
                         element.value='';
                     }
                 }
-                
+
                 // Clear default text of emty text areas on submit
                 function tSubmit(form) {
                     var defaultedElements = document.getElementsByTagName("textarea");
@@ -223,7 +223,7 @@
                         }
                     }
                 }
-                
+
                 // Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
                 function disableEnterKey(e) {
                     var key;
@@ -231,33 +231,33 @@
                         key = window.event.keyCode; //Internet Explorer
                     else
                         key = e.which; //Firefox and Netscape
-        
+
                     if(key == 13) //if "Enter" pressed, then disable!
                         return false;
                     else
                         return true;
                 }
-        
+
                 function FnArray() {
                     this.funcs = new Array;
                 }
-        
+
                 FnArray.prototype.add = function(f) {
                     if( typeof f!= "function" ) {
                         f = new Function(f);
                     }
                     this.funcs[this.funcs.length] = f;
                 };
-        
+
                 FnArray.prototype.execute = function() {
                     for( var i=0; i<xsl:text disable-output-escaping="yes">&lt;</xsl:text>this.funcs.length; i++ ){
                         this.funcs[i]();
                     }
                 };
-        
+
                 var runAfterJSImports = new FnArray();
             </script>
-            
+
             <!-- Add the title in -->
             <xsl:variable name="page_title" select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='title']" />
             <title>
@@ -311,7 +311,7 @@
                                 <li class="active">
                                     <xsl:value-of select="document(concat('../../html/', $static-page-name, '.xml'))/page/title-menu" />
                                 </li>
-                            </xsl:when>                                                                         
+                            </xsl:when>
                         </xsl:choose>
                     </xsl:when>
                     <xsl:otherwise>
@@ -331,23 +331,23 @@
 	                     <xsl:attribute name="name">
 	                         <xsl:value-of
 	                                 select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='queryField']"/>
-	                     </xsl:attribute>                
+	                     </xsl:attribute>
 	                </input>
 	                <span class="input-group-btn">
 	                	<button class="btn small-search-btn btn-default" name="submit" type="submit"><i class="fa fa-search" style="color: #7479B8;">&#160;</i></button>
 	                </span>
 	                </div>
-	            </form> 
-            </xsl:if>                                                                     
+	            </form>
+            </xsl:if>
             </ul>
         </div>
        	<div class="visible-xs text-center" style="margin-top: 5px;">
 			<button id="showhidemenu" type="button" class="btn btn-default btn-sm" style="border-radius: 30px; width: 100%;">
 					<i class="fa fa-align-justify">&#160;</i> Show/Hide Menu
-			</button>        	        		
-       	</div>        
+			</button>
+       	</div>
     </xsl:template>
-    
+
     <xsl:template match="dri:trail">
         <li>
             <xsl:attribute name="class">
@@ -379,11 +379,11 @@
     <xsl:template match="dri:body">
 
         <xsl:call-template name="navbar" />
-        
+
         <div class="container-fluid">
-            
+
             <div class="container">
-            
+
                 <xsl:call-template name="buildTrail" />
 
 	            <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='alert'][@qualifier='message']">
@@ -393,22 +393,22 @@
 	                    </h4>
 	                </div>
 	            </xsl:if>
-                
+
                 <div class="row contents">
 
                     <!-- sidebar -->
                     <xsl:apply-templates select="/dri:document/dri:options" />
-                
+
                     <div id="main-contents" class="col-sm-9">
 						<!-- Check for the custom pages -->
                         <xsl:choose>
-            
+
                             <xsl:when test="normalize-space($static-page-name) != ''">
                                 <div>
                                     <xsl:copy-of select="psu:documentReadAndInterpolate(concat($theme-path-on-disk, '/lib/html/', $static-page-name, '.html'))" />
                                 </div>
                             </xsl:when>
-            
+
 							<!-- Otherwise use default handling of body -->
                             <xsl:otherwise>
                                 <xsl:apply-templates />
@@ -416,7 +416,7 @@
                         </xsl:choose>
                    </div>
                 </div>
-                                   
+
             </div>
         </div>
     </xsl:template>
@@ -550,7 +550,7 @@
                  <xsl:value-of select="$theme-path" />
                  <xsl:text>/lib/bootstrap/js/bootstrap3-typeahead.js</xsl:text>
             </xsl:attribute>&#160;</script>
-        
+
         <script type="text/javascript">
             <xsl:attribute name="src">
                  <xsl:value-of select="$theme-path" />
@@ -584,7 +584,7 @@
 
         <!-- UFAL additional libraries
         -->
-        
+
         <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='include-library'][@qualifier='jqplot']">
         	<script type="text/javascript" src="{$theme-path}/lib/js/jqplot/jquery.jqplot.min.js">&#160;</script>
             <script type="text/javascript" src="{$theme-path}/lib/js/jqplot/plugins/jqplot.canvasTextRenderer.min.js">&#160;</script>
@@ -593,12 +593,12 @@
             <script type="text/javascript" src="{$theme-path}/lib/js/jqplot/plugins/jqplot.cursor.min.js">&#160;</script>
             <script type="text/javascript" src="{$theme-path}/lib/js/jqplot/plugins/jqplot.dateAxisRenderer.min.js">&#160;</script>
             <script type="text/javascript" src="{$theme-path}/lib/js/jqplot/plugins/jqplot.enhancedLegendRenderer.js">&#160;</script>
-            <script type="text/javascript" src="{$theme-path}/lib/js/jqplot/plugins/jqplot.barRenderer.min.js">&#160;</script>            
+            <script type="text/javascript" src="{$theme-path}/lib/js/jqplot/plugins/jqplot.barRenderer.min.js">&#160;</script>
             <script type="text/javascript" src="{$theme-path}/lib/js/piwik_charts.js">&#160;</script>
             <script type="text/javascript" src="{$theme-path}/lib/js/moment.min.js">&#160;</script>
             <script type="text/javascript" src="{$theme-path}/lib/js/daterangepicker.js">&#160;</script>
-        </xsl:if>        
-        
+        </xsl:if>
+
         <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='include-library'][@qualifier='datepicker']">
             <script type="text/javascript" src="{$theme-path}/lib/bootstrap/js/bootstrap-datepicker.js">&#160;</script>
         </xsl:if>
@@ -630,6 +630,10 @@
             <script type="text/javascript" src="{$theme-path}/lib/js/ufal-handles.js">&#160;</script>
         </xsl:if>
 
+        <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='include-library'][@qualifier='privacy']">
+            <script type="text/javascript" src="{$theme-path}/lib/js/commul-privacy.js">&#160;</script>
+        </xsl:if>
+
         <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='include-library'][@qualifier='select-collection']">
             <script type="text/javascript" src="{$theme-path}/lib/js/ufal-select-collection.js">&#160;</script>
         </xsl:if>
@@ -638,11 +642,11 @@
             <script type="text/javascript" src="{$theme-path}/lib/lindat-license-selector/lodash.min.js">&#160;</script>
             <script type="text/javascript" src="{$theme-path}/lib/lindat-license-selector/license-selector.js">&#160;</script>
         </xsl:if>
-        
+
         <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='include-library'][@qualifier='bootstrap-toggle']">
             <script type="text/javascript" src="{$theme-path}/lib/bootstrap/js/bootstrap2-toggle.min.js">&#160;</script>
-        </xsl:if>            
-        
+        </xsl:if>
+
         <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='include-library'][@qualifier='submission']">
             <script type="text/javascript" src="{$theme-path}/lib/js/ufal-submission.js">&#160;</script>
         </xsl:if>
@@ -668,8 +672,3 @@
     </xsl:template>
 
 </xsl:stylesheet>
-
-
-
-
-
