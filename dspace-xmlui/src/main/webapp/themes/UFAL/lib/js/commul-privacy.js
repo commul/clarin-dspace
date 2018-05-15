@@ -9,9 +9,9 @@ ufal.handles = {
     	if($('[name="privacy"]:checked').length == 0) {
     		$('[name="submit"]').prop( "disabled", true );
     	}
-    	$('[name="privacy"]').one('change', function (e) {
-
-    		$('[name="submit"]').prop( "disabled", !($('[name="privacy"]:checked')));
+    	$('[name="privacy"]').on('change', function (e) {
+        var chkBox = document.getElementsByName("privacy")[0];
+    		$('[name="submit"]').prop( "disabled", !(chkBox.checked));
 
     	});
     }
