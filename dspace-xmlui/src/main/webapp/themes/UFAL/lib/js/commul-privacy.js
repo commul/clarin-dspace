@@ -1,9 +1,9 @@
 /*global jQuery */
 /*jshint globalstrict: true*/
 'use strict';
-var ufal = ufal || {};
+var commul = commul || {};
 
-ufal.handles = {
+commul.privacy = {
 
     init : function () {
     	if($('[name="privacy"]:checked').length == 0) {
@@ -19,5 +19,5 @@ ufal.handles = {
 };
 
 jQuery(document).ready(function () {
-    ufal.handles.init();
+    commul.privacy.init();
 }); // ready
