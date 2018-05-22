@@ -79,6 +79,9 @@ public class SetEmailStart extends AbstractDSpaceTransformer implements Cacheabl
     private static final Message T_para2 =
         message("xmlui.EPerson.StartRegistration.para2");
 
+    private static final Message T_para_commul =
+        message("xmlui.EPerson.StartRegistration.para_commul");
+
     private static final Message T_email_address =
         message("xmlui.EPerson.StartRegistration.email_address");
 
@@ -206,7 +209,7 @@ public class SetEmailStart extends AbstractDSpaceTransformer implements Cacheabl
     	   email.addError("Sorry, this email is alredy in use.");
        }
        Item checkbox = form.addItem();
-       checkbox.addCheckBox("privacy").addOption("agreed", "I have read and agree with the privacy policy");
+       checkbox.addCheckBox("privacy").addOption("agreed", T_para_commul);
 
        Item submit = form.addItem();
        submit.addButton("submit").setValue(T_submit_register);

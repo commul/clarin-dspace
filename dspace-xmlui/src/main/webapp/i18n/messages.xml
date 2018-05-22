@@ -614,7 +614,7 @@
     <message key="xmlui.EPerson.WelcomeLogin.head1">Welcome to the ERCC Repository</message>
     <message key="xmlui.EPerson.WelcomeLogin.head2">Privacy Statement</message>
     <message key="xmlui.EPerson.WelcomeLogin.para1">The information released by your IdP (home organisation) is shown below.</message>
-    <message key="xmlui.EPerson.WelcomeLogin.warn1"><div class="bold text-error">We use only the required attributes as stated in <a href="https://clarin.eurac.edu/repository/xmlui/page/registration-privacypolicy" target="_blank" class="bold">https://clarin.eurac.edu/repository/xmlui/page/privacypolicy</a>.<BR />However, we may log the attributes and keep them for a time period.</div></message>
+    <message key="xmlui.EPerson.WelcomeLogin.warn1"><div class="bold text-error">We use only the required attributes as stated in <a href="https://clarin.eurac.edu/repository/xmlui/page/registration-privacypolicy" target="_blank" class="bold">https://clarin.eurac.edu/repository/xmlui/page/registration-privacypolicy</a>.<BR />However, we may log the attributes and keep them for a time period.</div></message>
     <message key="xmlui.EPerson.WelcomeLogin.buttonok">Return to Home</message>
 
 	<!-- org.dspace.app.xmlui.eperson.LDAPLogin.java -->
@@ -695,7 +695,8 @@
 	<message key="xmlui.EPerson.StartRegistration.reset_password_for">Reset password for</message>
 	<message key="xmlui.EPerson.StartRegistration.submit_reset">Reset password</message>
 	<message key="xmlui.EPerson.StartRegistration.head2">New user registration</message>
-    <message key="xmlui.EPerson.StartRegistration.para2">Register an account to subscribe to collections for email updates, and submit new items to the repository. By clicking on "Register" you acknowledge that you have read the <a href="page/registration-privacypolicy">privacy policy</a> and agree with it.</message>
+        <message key="xmlui.EPerson.StartRegistration.para2">Register an account to subscribe to collections for email updates, and submit new items to the repository. By clicking on "Register" you acknowledge that you have read the privacy policy and agree with it.</message>
+        <message key="xmlui.EPerson.StartRegistration.para_commul">I DECLARE that I have read the <a href="page/registration-privacypolicy">Information about personal data processing</a> pursuant to UE Reg. 679/2016 and give my CONSENT to the processing of my personal data.</message>
 	<message key="xmlui.EPerson.StartRegistration.email_address">Email Address</message>
 	<message key="xmlui.EPerson.StartRegistration.email_address_help">This address will be verified and used as your login name.</message>
 	<message key="xmlui.EPerson.StartRegistration.error_bad_email">Unable to send email to this address.</message>
