@@ -41,12 +41,12 @@
 						<div style="background-color: #FFFFFF;" class="clearfix">
 							<div class="col-sm-7" style="height: 120px; position: relative;">
 								<a href="/">
-									<img alt="ERCC logo" class="img-responsive" style="position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; padding: 20px;" src="{$context-path}/themes/UFAL/images/lindat/ercc-logo.jpg" />
+									<img alt="ERCC logo" class="img-responsive" style="position: absolute; bottom: 0px; left: 0px; right: 0px; padding-bottom: 20px; padding-right: 10px;" src="{$context-path}/themes/UFAL/images/lindat/ercc-logo.jpg" />
 								</a>
 							</div>
 							<div class="col-sm-5 text-center" style="height: 120px; position: relative;">
 								<a href="http://www.eurac.edu/">
-									<img alt="Eurac logo" class="img-responsive" style="position: absolute; bottom: 0px; left: 0px; right: 0px; padding: 10px;" src="{$context-path}/themes/UFAL/images/lindat/eurac-logo.png" />
+									<img alt="Eurac logo" class="img-responsive" style="position: absolute; bottom: 0px; left: 0px; right: 0px; padding-bottom: 20px; padding-left: 10px;" src="{$context-path}/themes/UFAL/images/lindat/eurac-logo.png" />
 								</a>
 							</div>
 						</div>					
