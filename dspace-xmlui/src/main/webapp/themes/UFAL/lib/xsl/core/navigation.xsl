@@ -41,7 +41,7 @@
 						<div style="background-color: #FFFFFF;" class="clearfix">
 							<div class="col-sm-7" style="height: 120px; position: relative;">
 								<a href="/">
-									<img alt="ERCC logo" class="img-responsive" style="position: absolute; bottom: 0px; left: 0px; right: 0px; padding-bottom: 20px; padding-right: 10px;" src="{$context-path}/themes/UFAL/images/lindat/ercc-logo.jpg" />
+									<img alt="ERCC logo" class="img-responsive" style="position: absolute; bottom: 0px; left: 0px; right: 0px; padding-bottom: 20px; padding-right: 10px;" src="{$context-path}/themes/UFAL/images/lindat/ercc-logo.png" />
 								</a>
 							</div>
 							<div class="col-sm-5 text-center" style="height: 120px; position: relative;">
