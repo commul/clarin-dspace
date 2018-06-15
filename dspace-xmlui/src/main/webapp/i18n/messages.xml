@@ -696,7 +696,7 @@
 	<message key="xmlui.EPerson.StartRegistration.submit_reset">Reset password</message>
 	<message key="xmlui.EPerson.StartRegistration.head2">New user registration</message>
         <message key="xmlui.EPerson.StartRegistration.para2">Register an account to subscribe to collections for email updates, and submit new items to the repository. By clicking on "Register" you acknowledge that you have read the privacy policy and agree with it.</message>
-        <message key="xmlui.EPerson.StartRegistration.para_commul">I DECLARE that I have read the <a href="page/registration-privacypolicy">Information about personal data processing</a> pursuant to UE Reg. 679/2016 and give my CONSENT to the processing of my personal data.</message>
+        <message key="xmlui.EPerson.StartRegistration.para_commul">  I DECLARE that I have read the <a href="page/registration-privacypolicy">Information about personal data processing</a> pursuant to UE Reg. 679/2016 and give my CONSENT to the processing of my personal data.</message>
 	<message key="xmlui.EPerson.StartRegistration.email_address">Email Address</message>
 	<message key="xmlui.EPerson.StartRegistration.email_address_help">This address will be verified and used as your login name.</message>
 	<message key="xmlui.EPerson.StartRegistration.error_bad_email">Unable to send email to this address.</message>
