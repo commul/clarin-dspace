@@ -326,6 +326,7 @@ public class Email
         // Get the mail configuration properties
         String server = ConfigurationManager.getProperty("mail.server");
         String from = ConfigurationManager.getProperty("mail.from.address");
+	replyTo = ConfigurationManager.getProperty("mail.replyto.address");
         boolean disabled = ConfigurationManager.getBooleanProperty("mail.server.disabled", false);
 
 		// Set up properties for mail session
