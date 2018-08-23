@@ -2625,6 +2625,7 @@
 	<message key="xmlui.dri2xhtml.METS-1.0.item-uri">URI</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-project-uri">Project URL</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-demo-uri">Demo URL</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-is-based-on-uri">Is Based On</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-handle">Handle</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-date">Date issued</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-publisher">Publisher</message>

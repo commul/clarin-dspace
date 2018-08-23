@@ -322,9 +322,42 @@
 				</xsl:call-template>
 			</xsl:when>
 
+			<!-- Is Based On row -->
+			<xsl:when
+				test="$clause = 7 and dim:field[@element='relation'][@qualifier='isbasedon']">
+				<dl id="project-url" class="dl-horizontal">
+					<dt style="text-align: left">
+						<i class="fa fa-link">&#160;</i>
+						<i18n:text>xmlui.dri2xhtml.METS-1.0.item-is-based-on-uri</i18n:text>
+					</dt>
+					<dd>
+						<xsl:for-each
+							select="dim:field[@element='relation' and @qualifier='isbasedon']">
+							<xsl:if test="self::node()[text()!='']">
+								<a target="_blank">
+									<xsl:attribute name="href">
+										<xsl:copy-of select="./node()" />
+									</xsl:attribute>
+									<xsl:copy-of select="./node()" />
+								</a>
+								<xsl:if
+									test="count(following-sibling::dim:field[@element='relation' and @qualifier='isbasedon']) != 0">
+									<br />
+								</xsl:if>
+							</xsl:if>
+						</xsl:for-each>
+					</dd>
+				</dl>
+				
+				<xsl:call-template name="itemSummaryView-DIM-fields">
+					<xsl:with-param name="clause" select="($clause + 1)" />
+					<xsl:with-param name="phase" select="$otherPhase" />
+				</xsl:call-template>
+			</xsl:when>
+						
 			<!-- referenced by -->
 			<xsl:when
-					test="$clause = 7 and dim:field[@element='relation'][@qualifier='isreferencedby']">
+					test="$clause = 8 and dim:field[@element='relation'][@qualifier='isreferencedby']">
 				<dl id="relation-isreferencedby" class="dl-horizontal">
 					<dt style="text-align: left">
 						<i class="fa fa-link">&#160;</i>
@@ -357,7 +390,7 @@
 
 			<!-- date.issued row -->
 			<xsl:when
-				test="$clause = 8 and (dim:field[@element='date' and @qualifier='issued'])">
+				test="$clause = 9 and (dim:field[@element='date' and @qualifier='issued'])">
 				<dl id="date-issued" class="dl-horizontal">
 					<dt style="text-align: left">
 						<i class="fa fa-calendar">&#160;</i>					
@@ -381,7 +414,7 @@
 
 			<!-- type row -->
 			<xsl:when
-				test="$clause = 9 and (dim:field[@element='type' and not(@qualifier)])">
+				test="$clause = 10 and (dim:field[@element='type' and not(@qualifier)])">
 					<dl id="item-type" class="dl-horizontal">
 					<dt style="text-align: left">
 						<i class="fa fa-tag">&#160;</i>
@@ -401,7 +434,7 @@
 			</xsl:when>				
 
 			<!-- size row -->
-			<xsl:when test="$clause = 10">
+			<xsl:when test="$clause = 11">
 					<xsl:variable name="sizeInfo">
 						<xsl:choose>
 							<xsl:when test="dim:field[@mdschema='local' and @element='size' and @qualifier='info'][1]/node()">
@@ -444,7 +477,7 @@
 
 			<!-- type languages -->
 			<xsl:when
-				test="$clause = 11 and (dim:field[@element='language' and @qualifier='iso'])">
+				test="$clause = 12 and (dim:field[@element='language' and @qualifier='iso'])">
 					<dl id="item-languages" class="dl-horizontal">
 					<dt style="text-align: left">
 						<i class="fa fa-flag ">&#160;</i>
@@ -523,7 +556,7 @@
 
 			<!-- Description row -->
 			<xsl:when
-				test="$clause = 12 and (dim:field[@element='description' and not(@qualifier)])">
+				test="$clause = 13 and (dim:field[@element='description' and not(@qualifier)])">
 				<dl id="item-description" class="dl-horizontal linkify">
 					<dt style="text-align: left">
 						<i class="fa fa-file-text-o">&#160;</i>
@@ -556,7 +589,7 @@
 			
 			<!-- Publisher row -->
 			<xsl:when
-				test="$clause = 13 and (dim:field[@element='publisher' and not(@qualifier)])">
+				test="$clause = 14 and (dim:field[@element='publisher' and not(@qualifier)])">
 				<dl id="item-publisher" class="dl-horizontal">
 					<dt style="text-align: left">
 						<i class="fa fa-copy">&#160;</i>
@@ -588,7 +621,7 @@
 
 			<!-- Sponsors row -->
 			<xsl:when
-				test="$clause = 14 and ((dim:field[@element='sponsor' and not(@qualifier)]) or (dim:field[@element='ResourceInfo#ResourceCreationInfo#FundingInfo#ProjectInfo'] and dim:field[@qualifier='projectName']))">
+				test="$clause = 15 and ((dim:field[@element='sponsor' and not(@qualifier)]) or (dim:field[@element='ResourceInfo#ResourceCreationInfo#FundingInfo#ProjectInfo'] and dim:field[@qualifier='projectName']))">
 				<dl id="item-sponsor" class="dl-horizontal">
 					<dt style="text-align: left">
 						<i class="fa fa-money">&#160;</i>
@@ -659,7 +692,7 @@
 			
 			<!-- Subject keywords -->
 			<xsl:when
-				test="$clause = 15 and (dim:field[@element='subject' and not(@qualifier)])">
+				test="$clause = 16 and (dim:field[@element='subject' and not(@qualifier)])">
 				<dl id="item-subject" class="dl-horizontal">
 					<dt style="text-align: left">
 						<i class="fa fa-tags">&#160;</i>
@@ -685,7 +718,7 @@
 			
 			<!-- Collections -->
   			<xsl:when
-				test="$clause = 16 and $ufal-collection-references">
+				test="$clause = 17 and $ufal-collection-references">
 				<dl id="item-subject" class="dl-horizontal">
 					<dt style="text-align: left">
 						<i class="fa fa-sitemap">&#160;</i>
@@ -710,7 +743,7 @@
 				</xsl:call-template>
 			</xsl:when>
 
-			<xsl:when test="$clause = 17 and $ds_item_view_toggle_url != ''">
+			<xsl:when test="$clause = 18 and $ds_item_view_toggle_url != ''">
 
                 <!-- other versions -->
                 <xsl:choose>
@@ -782,7 +815,7 @@
 			<!-- recurse without changing phase if we didn't output anything -->
 			<xsl:otherwise>
 				<!-- IMPORTANT: This test should be updated if clauses are added! -->
-				<xsl:if test="$clause &lt; 17">
+				<xsl:if test="$clause &lt; 18">
 					<xsl:call-template name="itemSummaryView-DIM-fields">
 						<xsl:with-param name="clause" select="($clause + 1)" />
 						<xsl:with-param name="phase" select="$phase" />
