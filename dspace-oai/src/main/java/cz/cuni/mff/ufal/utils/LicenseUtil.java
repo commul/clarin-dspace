@@ -64,18 +64,18 @@ public class LicenseUtil {
 
 	 */
 	private static String[] _uri2metashareDefs = {
-			 "http://opensource.org/licenses/GPL-3.0,GPL",
-			 "http://www.gnu.org/licenses/gpl-2.0.html,GPL",
-			 "http://opensource.org/licenses/BSD-2-Clause,BSD",
-			 "http://opensource.org/licenses/BSD-3-Clause,BSD",
-			 "http://www.apache.org/licenses/LICENSE-2.0,ApacheLicence_2.0",
-			 "http://creativecommons.org/licenses/by-nc/3.0/,CC-BY-NC",
-			 "http://creativecommons.org/licenses/by-nc-sa/3.0/,CC-BY-NC-SA",
-			 "http://creativecommons.org/licenses/by-nd/3.0/,CC-BY-ND",
-			 "http://creativecommons.org/licenses/by-sa/3.0/,CC-BY-SA",
-			 "http://creativecommons.org/licenses/by/3.0/,CC-BY",
-			 "http://creativecommons.org/licenses/by-nc-nd/3.0/,CC-BY-NC-ND",
-			 "http://creativecommons.org/choose/zero/,CC-ZERO"
+			 "https://opensource.org/licenses/GPL-3.0,GPL",
+			 "https://www.gnu.org/licenses/gpl-2.0.html,GPL",
+			 "https://opensource.org/licenses/BSD-2-Clause,BSD",
+			 "https://opensource.org/licenses/BSD-3-Clause,BSD",
+			 "https://www.apache.org/licenses/LICENSE-2.0,ApacheLicence_2.0",
+			 "https://creativecommons.org/licenses/by-nc/3.0/,CC-BY-NC",
+			 "https://creativecommons.org/licenses/by-nc-sa/3.0/,CC-BY-NC-SA",
+			 "https://creativecommons.org/licenses/by-nd/3.0/,CC-BY-ND",
+			 "https://creativecommons.org/licenses/by-sa/3.0/,CC-BY-SA",
+			 "https://creativecommons.org/licenses/by/3.0/,CC-BY",
+			 "https://creativecommons.org/licenses/by-nc-nd/3.0/,CC-BY-NC-ND",
+			 "https://creativecommons.org/choose/zero/,CC-ZERO"
 	};
 	
 	/*
@@ -94,16 +94,16 @@ public class LicenseUtil {
 
 	 */
 	private static String[] _restrictionDefs = {
-		 ccToRes("http://creativecommons.org/licenses/by-nc/3.0/"),
-		 ccToRes("http://creativecommons.org/licenses/by-nc-sa/3.0/"),
-		 ccToRes("http://creativecommons.org/licenses/by-nd/3.0/"),
-		 ccToRes("http://creativecommons.org/licenses/by-sa/3.0/"),
-		 ccToRes("http://creativecommons.org/licenses/by/3.0/"),
-		 ccToRes("http://creativecommons.org/licenses/by-nc-nd/3.0/")
+		 ccToRes("https://creativecommons.org/licenses/by-nc/3.0/"),
+		 ccToRes("https://creativecommons.org/licenses/by-nc-sa/3.0/"),
+		 ccToRes("https://creativecommons.org/licenses/by-nd/3.0/"),
+		 ccToRes("https://creativecommons.org/licenses/by-sa/3.0/"),
+		 ccToRes("https://creativecommons.org/licenses/by/3.0/"),
+		 ccToRes("https://creativecommons.org/licenses/by-nc-nd/3.0/")
 };
 	
 	private static String ccToRes(String ccuri){
-		String ld = ccuri.replaceFirst("http://creativecommons.org/licenses/", "").replaceFirst("/3.0/", "");
+		String ld = ccuri.replaceFirst("https://creativecommons.org/licenses/", "").replaceFirst("/3.0/", "");
 		String ret = ccuri + "©";
 		for(String tag : ld.split("-")){
 			if(tag.equals("by")){
@@ -189,8 +189,8 @@ public class LicenseUtil {
 	}
 	
 	public static void main(String[] args) throws Exception{
-		System.out.println(uriToMetashare("http://creativecommons.org/licenses/by-nc/3.0/"));
-		System.out.println(uriToAvailability("http://creativecommons.org/licenses/by-nc/3.0/"));
+		System.out.println(uriToMetashare("https://creativecommons.org/licenses/by-nc/3.0/"));
+		System.out.println(uriToAvailability("https://creativecommons.org/licenses/by-nc/3.0/"));
 	}
 
 }
