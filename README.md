@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ufal/clarin-dspace.svg?branch=lindat)](https://travis-ci.org/ufal/lindat-dspace)
+[![Build Status](https://travis-ci.org/ufal/clarin-dspace.svg?branch=lindat)](https://travis-ci.org/ufal/clarin-dspace)
 # clarin-dspace repository
 
 * developed at: [Institute of Formal and Applied Linguistics, Charles University](http://ufal.mff.cuni.cz/)
@@ -38,6 +38,8 @@ Afterwards, [install repository](https://github.com/ufal/clarin-dspace/wiki/Inst
 If you are familiar with vagrant and puppet then go directly to
 [shell script executed by Vagrant](https://github.com/ufal/lindat-repository-vagrant/blob/master/Projects/setup.lindat.sh).
 Optionally, you can also inspect our [travis integration](https://github.com/ufal/clarin-dspace/blob/lindat/.travis.yml).
+
+Our colleagues at the [ERCC](https://clarin.eurac.edu) have developed a dockerized version of clarin-dspace. It can be found on their [gitlab](https://gitlab.inf.unibz.it/commul/docker/clarin-dspace).
 
 ## Other projects used by clarin-dspace
 
