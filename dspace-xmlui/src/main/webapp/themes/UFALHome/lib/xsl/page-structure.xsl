@@ -891,10 +891,10 @@
 				  <a href="/">
 			            <img src="{$context-path}/themes/UFAL/images/lindat/ercc-logo.jpg" style="position: absolute; height: 60%; top: 0px; bottom: 0px; margin: auto;" class="logo" alt="ERCC logo" /></a>
 				</div>
-		                <div style="height: 100px; position: relative;" class="col-md-5 col-lg-5">
+		        <div style="height: 100px; position: relative;" class="col-md-5 col-lg-5">
 				    <a href="http://www.eurac.edu/">
 		                    <img src="{$context-path}/themes/UFAL/images/lindat/eurac-logo.png" style="position: absolute; height: 70%; top: 50px; bottom: 0px; margin: auto;" class="logo" alt="Eurac logo" /></a>
-		                </div>
+		        </div>
 			</div>
         </div>		
 </div>	-->

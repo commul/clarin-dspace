@@ -695,12 +695,19 @@
 	<message key="xmlui.EPerson.StartRegistration.reset_password_for">Reset password for</message>
 	<message key="xmlui.EPerson.StartRegistration.submit_reset">Reset password</message>
 	<message key="xmlui.EPerson.StartRegistration.head2">New user registration</message>
-        <message key="xmlui.EPerson.StartRegistration.para2">Register an account to subscribe to collections for email updates, and submit new items to the repository. By clicking on "Register" you acknowledge that you have read the privacy policy and agree with it.</message>
-        <message key="xmlui.EPerson.StartRegistration.para_commul">  I DECLARE that I have read the <a href="page/registration-privacypolicy">Information about personal data processing</a> pursuant to UE Reg. 679/2016 and give my CONSENT to the processing of my personal data.</message>
+	<message key="xmlui.EPerson.StartRegistration.para2">Register an account to subscribe to collections for email updates, and submit new items to the repository. By clicking on "Register" you acknowledge that you have read the privacy policy and agree with it.</message>
+	<message key="xmlui.EPerson.StartRegistration.para_commul">  I DECLARE that I have read the <a href="page/registration-privacypolicy">Information about personal data processing</a> pursuant to UE Reg. 679/2016 and give my CONSENT to the processing of my personal data.</message>
 	<message key="xmlui.EPerson.StartRegistration.email_address">Email Address</message>
 	<message key="xmlui.EPerson.StartRegistration.email_address_help">This address will be verified and used as your login name.</message>
 	<message key="xmlui.EPerson.StartRegistration.error_bad_email">Unable to send email to this address.</message>
 	<message key="xmlui.EPerson.StartRegistration.submit_register">Register</message>
+
+
+	<message key="xmlui.EPerson.SetEmailStart.para2">Your IDP (home organization) has not provided your email
+		address. Please fill and verify your email in order to submit new items to the repository, to download
+		restricted items and optionally to subscribe to advanced statistics and/or collection updates.</message>
+	<message key="xmlui.EPerson.SetEmailStart.email_address_help">This address will be verified and remembered until
+		your IDP provides a different one. You will still sign in through your IDP.</message>
 
 	<!-- org.dspace.app.xmlui.eperson.VerifyEmail.java -->
 	<message key="xmlui.EPerson.VerifyEmail.title">Verification email sent</message>
@@ -895,6 +902,7 @@
 	<message key="xmlui.Submission.submit.DescribeStep.controlledvocabulary.error">There was an issue when loading the controlled vocabulary, please try again later.</message>
 	<message key="xmlui.Submission.submit.DescribeStep.missing_field">Fill all the fields, please.</message>
 	<message key="xmlui.Submission.submit.DescribeStep.regexp_error">The field doesn't match the required regular expression (format) "{0}"</message>
+	<message key="xmlui.Submission.submit.DescribeStep.english_only">Fill the metadata in English where possible (especially free text fields such as description).</message>
 
     <!-- org.dspace.app.xmlui.Submission.submit.UFALLicenseStep -->
     <message key="xmlui.Submission.submit.NA">N/A</message>
@@ -1129,8 +1137,8 @@
     <message key="xmlui.Submission.submit.LicenseStep.info2"></message>
     <message key="xmlui.Submission.submit.LicenseStep.info3">If you have questions regarding this licence please contact the <a class="helpdesk-tolink">Help Desk</a>.</message>
     <message key="xmlui.Submission.submit.LicenseStep.decision_label">Deposition agreement</message>
-	<message key="xmlui.Submission.submit.LicenseStep.decision_checkbox">By checking this box, you agree to the Deposition Agreement for this repository to reproduce, translate and distribute your submissions worldwide.</message>
-	<message key="xmlui.Submission.submit.LicenseStep.decision_error">You must grant this license to complete your submission. If you are unable to grant this license at this time you may save your work and return later or remove the submission by clicking the 'Save &amp; Exit' button below.</message>
+    <message key="xmlui.Submission.submit.LicenseStep.decision_checkbox">By checking this box, you agree to the Deposition Agreement for this repository to reproduce, translate and distribute your submissions worldwide.</message>
+    <message key="xmlui.Submission.submit.LicenseStep.decision_error">You must grant this license to complete your submission. If you are unable to grant this license at this time you may save your work and return later or remove the submission by clicking the 'Save &amp; Exit' button below.</message>
 
 
     <message key="xmlui.Submission.submit.LicenseStep.morelicense_head">None of these licenses suits your needs</message>
@@ -2960,7 +2968,6 @@
   <message key="xmlui.UFAL.artifactbrowser.authors">Authors</message>
   <message key="xmlui.UFAL.artifactbrowser.project.code">Project code: {0}</message>
   <message key="xmlui.UFAL.artifactbrowser.project.name">Project name: {0}</message>
-  <message key="xmlui.UFAL.artifactbrowser.piwik.views">Views Over Time</message>
   <message key="xmlui.UFAL.artifactbrowser.item_view.replaced_one">This item is replaced by a newer submission:</message>
   <message key="xmlui.UFAL.artifactbrowser.item_view.replaced_many">This item is replaced by newer submissions:</message>
   <message key="xmlui.UFAL.artifactbrowser.item_view.versions_dt">Other versions</message>
@@ -3043,11 +3050,11 @@
 	<message key="input_forms.field.dc.description.required">Please give us a description</message>
 	<message key="input_forms.field.dc.language.iso.label">Language</message>
 	<message key="input_forms.field.dc.language.iso.hint">Select the language of the main content of the item. Multiple languages are possible. Start
-		typing the language and use the autocomplete form that will appear if applicable. Better to list all the languages then to use the 'mul' iso code (if there are too many, contact support).
+		typing the language and use autocomplete form that will appear if applicable. Better to list all the languages then to use the 'mul' iso code (if there are too many, contact support).
 	</message>
 	<message key="input_forms.field.dc.language.iso.required">Please choose a language for the resource.</message>
 	<message key="input_forms.field.dc.language.iso1.label">Language</message>
-	<message key="input_forms.field.dc.language.iso1.hint">If the tool/service is language dependent, select the appropriate language(s). Otherwise leave the field empty. Multiple languages are possible. Start typing the language and use the autocomplete
+	<message key="input_forms.field.dc.language.iso1.hint">If the tool/service is language dependent, select the appropriate language(s). Otherwise leave the field empty. Multiple languages are possible. Start typing the language and use autocomplete
 		form that will appear.
 	</message>
 	<message key="input_forms.field.dc.subject.label">Subject Keywords</message>
@@ -3150,6 +3157,8 @@
 	<message key="input_forms.value_pairs.metashare_detailed_lexicalConceptualResource.other">other</message>
 	<message key="input_forms.value_pairs.metashare_detailed_languageDescription.N/A">N/A</message>
 	<message key="input_forms.value_pairs.metashare_detailed_languageDescription.grammar">grammar</message>
+	<message key="input_forms.value_pairs.metashare_detailed_languageDescription.mlmodel">machine learning model</message>
+	<message key="input_forms.value_pairs.metashare_detailed_languageDescription.ngrammodel">n-gram model</message>
 	<message key="input_forms.value_pairs.metashare_detailed_languageDescription.other">other</message>
 	<message key="input_forms.value_pairs.metashare_funding.N/A">N/A</message>
 	<message key="input_forms.value_pairs.metashare_funding.euFunds">EU</message>

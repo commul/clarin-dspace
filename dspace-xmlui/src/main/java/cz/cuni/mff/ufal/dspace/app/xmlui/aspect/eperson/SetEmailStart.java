@@ -87,7 +87,7 @@ public class SetEmailStart extends AbstractDSpaceTransformer implements Cacheabl
 
     private static final Message T_email_address_help =
         message("xmlui.EPerson.StartRegistration.email_address_help");
-
+    
     private static final Message T_error_bad_email =
         message("xmlui.EPerson.StartRegistration.error_bad_email");
 

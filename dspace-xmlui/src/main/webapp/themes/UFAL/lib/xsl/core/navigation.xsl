@@ -52,12 +52,9 @@
 						</div>					
 					</li>
 				</xsl:if>
-				<li class="always-open hidden-xs">
-					<xsl:call-template name="howto-panel" />
-				</li>
 				<xsl:apply-templates select="dri:list[count(child::*)!=0]" />
 				<xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='feed']">
-					<li class="always-open">
+					<li class="">
 						<xsl:call-template name="addRSSLinks" />
 					</li>				
 				</xsl:if>
@@ -271,7 +268,7 @@
 
     <!-- Add each RSS feed from meta to a list -->
     <xsl:template name="addRSSLinks">
-        <a>
+        <a href="#" class="dropdown-toggle">
                 <i class="fa fa-rss-square ">&#160;</i>
                 <span class="menu-text">
                         RSS Feed
