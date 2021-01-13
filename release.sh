@@ -27,7 +27,9 @@ docker build \
 
 DOCKER_HASH="$(docker image ls "$IMAGE_BASE_URL" --format "{{.ID}}" | head -n1)"
 docker tag "$DOCKER_HASH" "$IMAGE_BASE_URL:$ERCC_VERSION"
+docker tag "$DOCKER_HASH" "$IMAGE_BASE_URL:latest"
 docker push "$IMAGE_BASE_URL:$ERCC_VERSION"
+docker push "$IMAGE_BASE_URL:latest"
 
 echo "Make sure to change Dockerfile.dspace to point to: $IMAGE_URL"
 echo "$VERSION" > .version
