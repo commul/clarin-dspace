@@ -3,3 +3,7 @@
 .settings/
 */target/
 dspace/modules/*/target/
+.*.swp
+.release*
+Earthfile
+Dockerfile*
