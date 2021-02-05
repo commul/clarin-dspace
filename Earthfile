@@ -13,7 +13,7 @@ docker-from-docker:
     ARG EARTHLY_GIT_PROJECT_NAME  # https://docs.earthly.dev/earthfile/builtin-args
     ARG GIT_PROJECT_NAME="commul/docker/clarin-dspace"
     ARG COMMUL_REGISTRY_URL="https://gitlab.inf.unibz.it/commul/docker/clarin-dspace/container_registry/"
-    ARG LABEL_VCS_URL="https://gitlab.inf.unibz.it/commul/docker/clarin-dspace"
+    ARG LABEL_VCS_URL="https://github.com/commul/clarin-dspace"
 
     ARG AUTHOR="Egon W. Stemle <egon.stemle@eurac.edu>"
     ARG MAINTAINER="Egon W. Stemle <egon.stemle@eurac.edu>"
