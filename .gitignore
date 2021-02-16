@@ -45,3 +45,7 @@ META-INF/
 
 ## Ignore compiled python files
 *.pyc
+
+##
+.release
+.UFAL_VERSION

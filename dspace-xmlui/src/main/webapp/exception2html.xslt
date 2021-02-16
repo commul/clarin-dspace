@@ -31,10 +31,6 @@
 
 	<xsl:param name="contextPath" />
 
-    <xsl:variable name="aaiURL">
-        <xsl:value-of select="confman:getProperty('lr', 'lr.aai.url')"/>
-    </xsl:variable>
-
 	<xsl:variable name="request-uri"
 		select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='request'][@qualifier='URI']" />
 
@@ -262,9 +258,6 @@
                         <xsl:value-of select="concat($contextPath,$theme-path,'/lib/js/messages/messages.js')" />
                     </xsl:attribute>&#160;</script>
 
-            <script type="text/javascript" src="{concat($aaiURL, '/discojuice/discojuice-2.1.en.min.js')}">&#160;</script>
-            <script type="text/javascript" src="{concat($aaiURL, '/aai.js')}">&#160;</script>
-	
 	        <xsl:variable name="localJQuerySrc">
 	            <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
 	            <xsl:text>/static/js/jquery-</xsl:text>

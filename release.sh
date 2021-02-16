@@ -3,7 +3,6 @@ set -e
 
 # FIXME: run tests (at least, autocheck syntax...)
 # FIXME: make sure all changes are commited into the repository
-# FIXME: (automatically) increase .version
 
 ERCC_TAG="$(git describe --tags --abbrev=0 $(git rev-list --tags --max-count=1))"
 ERCC_VERSION="${ERCC_TAG:-latest}"
@@ -23,4 +22,4 @@ earthly --push \
     --build-arg DOCKER_URL="$IMAGE_BASE_URL" \
     +docker
 
-echo "Make sure to change Dockerfile.dspace to point to: $IMAGE_URL"
+echo "Make sure to change 'ARG DSPACE_APP_VERSION' in .../docker/clarin-dspace/dockerfiles/Earthfile to: $IMAGE_BASE_URL:$ERCC_VERSION"

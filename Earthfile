@@ -39,7 +39,7 @@ docker-from-docker:
           org.commul.docker-url="$DOCKER_URL"
 
     RUN echo $VERSION > /tmp/release
-    SAVE ARTIFACT --keep-ts /tmp/release AS LOCAL ./.release-$UFAL_VERSION-$TARGET_TAG_DOCKER
+    SAVE ARTIFACT --keep-ts /tmp/release AS LOCAL ./.release
 
     SAVE IMAGE dspace-app:latest
     SAVE IMAGE --push "$DOCKER_URL:latest"
