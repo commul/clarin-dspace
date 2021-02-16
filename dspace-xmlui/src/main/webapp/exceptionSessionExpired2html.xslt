@@ -30,9 +30,11 @@
 
     <xsl:param name="contextPath" />
 
+    <!-- Disable local AAI - use CLARIN    
     <xsl:variable name="aaiURL">
         <xsl:value-of select="confman:getProperty('lr', 'lr.aai.url')"/>
     </xsl:variable>
+    -->
 
     <xsl:variable name="request-uri"
         select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='request'][@qualifier='URI']" />
@@ -254,8 +256,10 @@
             <script type="text/javascript" src="{concat($protocol, 'ajax.googleapis.com/ajax/libs/jquery/', $jqueryVersion ,'/jquery.min.js')}">&#160;</script>
             <script type="text/javascript" src="{$contextPath}/themes/UFAL/lib/js/jquery-ui.js">&#160;</script>
 
+            <!-- Disable local AAI - use CLARIN    
             <script type="text/javascript" src="{concat($aaiURL, '/discojuice/discojuice-2.1.en.min.js')}">&#160;</script>
             <script type="text/javascript" src="{concat($aaiURL, '/aai.js')}">&#160;</script>
+            -->
 
             <xsl:variable name="localJQuerySrc">
                 <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>

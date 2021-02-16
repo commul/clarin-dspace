@@ -30,9 +30,11 @@
 
     <xsl:output indent="yes" />
 
+    <!-- Disable local AAI - use CLARIN    
     <xsl:variable name="aaiURL">
         <xsl:value-of select="confman:getProperty('lr', 'lr.aai.url')"/>
     </xsl:variable>
+    -->
 
     <xsl:template match="dri:document">
     	<xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html></xsl:text>
@@ -283,7 +285,9 @@
                 <meta name="{@element}" content="{.}"></meta>
             </xsl:for-each>
 
+            <!-- Disable local AAI - use CLARIN    
             <link href="{concat($aaiURL, '/discojuice/discojuice.css')}" type="text/css" rel="stylesheet" />
+            -->
 
             <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='google_dataset']">
                 <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='google_dataset']"
@@ -465,8 +469,10 @@
                 </xsl:choose>
             </xsl:attribute>&#160;</script>
 
+        <!-- Disable local AAI - use CLARIN    
         <script type="text/javascript" src="{concat($aaiURL, '/discojuice/discojuice-2.1.en.min.js')}">&#160;</script>
         <script type="text/javascript" src="{concat($aaiURL, '/aai.js')}">&#160;</script>
+        -->
 
         <xsl:variable name="localJQuerySrc">
                 <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
