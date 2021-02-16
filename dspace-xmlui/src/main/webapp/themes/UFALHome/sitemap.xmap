@@ -127,7 +127,6 @@
                 </map:transform>
 
                 <map:transform type="IncludePageMeta">
-                    <map:parameter name="javascript#2" value="../UFAL/lib/js/aai_config.js"/>
                     <map:parameter name="theme.path" value="{global:theme-path}"/>
                     <map:parameter name="theme.name" value="{global:theme-name}"/>
                     <map:parameter name="curRequestURI" value="{1}"/>
